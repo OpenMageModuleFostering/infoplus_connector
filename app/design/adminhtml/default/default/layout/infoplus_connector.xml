@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     default_default
+ */
+-->
+<layout>
+    <adminhtml_catalog_product_edit>
+        <reference name="product_tabs">
+            <action method="addTab">
+                <name>infoplus_product_tab</name>
+                <block>infoplus/adminhtml_catalog_product_edit_tab_infoplusitem</block>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_edit>
+</layout>

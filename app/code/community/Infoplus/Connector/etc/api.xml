@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * @category    Infoplus
+ * @package     Infoplus_Connector
+ */
+-->
+<config>
+   <api>
+      <resources>
+         <sales_order_shipment>
+            <methods>
+               <sendEmailToCustomer>
+                  <title>Send a Shipment email to the customer on an order</title>
+               </sendEmailToCustomer>
+            </methods>
+         </sales_order_shipment>
+         <catalog_product>
+            <methods>
+               <getProductInfoByWmsSku>
+                  <title>Get product information based on wms sku</title>
+               </getProductInfoByWmsSku>
+            </methods>
+         </catalog_product>
+      </resources>
+   </api>
+</config>

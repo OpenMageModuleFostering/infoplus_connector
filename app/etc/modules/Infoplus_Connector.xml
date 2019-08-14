@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * @category    Infoplus
+ * @package     Infoplus_Connector
+ */
+-->
+<config>
+    <modules>
+        <Infoplus_Connector>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Infoplus_Connector>
+    </modules>
+</config>

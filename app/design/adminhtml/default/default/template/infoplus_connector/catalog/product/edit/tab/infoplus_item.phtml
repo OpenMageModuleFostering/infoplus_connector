@@ -1,0 +1,45 @@
+<?php
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     default_default
+ */
+?>
+
+<?php
+
+   $isChecked = "";
+
+   ####################################################
+   ## look for existing infoplus_record for this sku ##
+   ####################################################
+   $collection = Mage::getModel('infoplus/infoplus_product')->getCollection()->addFieldToFilter('magento_sku', $this->getProduct()->getSku());
+
+   ######################################
+   ## if any records found, do updates ##
+   ######################################
+   if(count($collection) > 0)
+   {
+      foreach($collection as $infoplusProduct)
+      {
+         $existingValue = $infoplusProduct->getWmsSku();
+         if($existingValue == "on")
+         {
+            $isChecked = "checked";
+            break;
+         }
+      }
+   }
+?>
+
+
+<div class="entry-edit">
+   <div class="entry-edit-head">
+      <h4><?php echo $this->__('Infoplus Product Info'); ?></h4>
+   </div>
+   <div class="fieldset fieldset-wide">
+      <label for="infoplus_wms_sku">Fulfilled By Infoplus:&nbsp;</label>
+      <input type="checkbox" class="input-text" name="infoplus_wms_sku" id="infoplus_wms_sku" <?php echo $isChecked ?> />
+   </div>
+</div>
