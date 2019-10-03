@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Infoplus_Connector",
+    "name": "OpenMageModuleFostering\/Infoplus_Connector",
     "type": "magento-module",
     "license": "Apache-License,-Version-2.0",
     "homepage": "",
     "description": "Module to integrate Magento with Infoplus",
     "authors": [
-    {
-        "name": "Infoplus",
-        "email": "infoplusconnect@infopluscommerce.com"
-    }
-],
+        {
+            "name": "Infoplus",
+            "email": "infoplusconnect@infopluscommerce.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
